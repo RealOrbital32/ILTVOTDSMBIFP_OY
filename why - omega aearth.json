@@ -1,0 +1,44 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "I'm not rlly motivated anymore :yum:",
+	"starSystem": "Cigtu.ILVONTSMBIFASM(OY)",
+	"Base": {
+		"surfaceGravity": 9,
+		"surfaceSize": 5000,
+		"hasMapMarker": true,
+		"ambientLight": 0.5
+	},
+	"Orbit": {
+		"semiMajorAxis": 30000,
+		"primaryBody": "Star",
+		"isTidallyLocked": true,
+		"isMoon": false,
+		"eccentricity" : 0.9
+	},
+	"HeightMap": {
+		"heightMap": "planets/assets/omega aearth.png",
+		"textureMap": "planets/assets/omega aearth h.png",
+		"minHeight": 4000,
+		"maxHeight": 5050
+	},
+	"Water": {
+		"size": 4500
+			},
+	"Atmosphere": {
+		"size": 6580,
+		"fogSize": 6580,
+		"useAtmosphereShader": true,
+		"atmosphereTint": {
+			"r": 0,
+			"g": 100,
+			"b": 255,
+			"a": 255
+		},
+		"fogTint": {
+			"r": 0,
+			"g": 100,
+			"b": 255,
+			"a": 255
+			}
+		}
+	}

@@ -1,0 +1,84 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Star",
+	"starSystem": "Cigtu.ILVONTSMBIFASM(OY)",
+	"Base": {
+		"surfaceGravity": 100,
+		"surfaceSize": 2100,
+		"hasMapMarker": true,
+		"gravityFallOff": "inverseSquared",
+		"centerOfSolarSystem" : true
+	},
+	"Orbit": {
+		"canShowOnTitle": true,
+        "isStatic": true
+			},
+	"Spawn": {
+		"playerSpawn": {
+			"position": {
+				"x": 22,
+				"y": 202,
+				"z": -10347
+			},
+			"rotation": {
+				"x": 200,
+				"y": 90,
+				"z": 90
+			},
+			"startWithSuit": true
+		},
+		"shipSpawn": {
+			"position": {
+				"x": 22,
+				"y": 206,
+				"z": -10343
+			},
+			"rotation": {
+				"x": 180,
+				"y": 90,
+				"z": 90
+			}
+		}
+	},
+    "Rings": [
+      {
+        "fluidType": "sand",
+        "innerRadius": 500,
+        "outerRadius": 50000,
+        "texture": "planets/assets/Sdisk.png",
+		"rotationSpeed": 1.25,
+        "inclination": 70
+	  }
+    ],
+	"Atmosphere": {
+		"size": 600,
+		"fogTint": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"fogDensity": 0.4,
+		"fogSize": 2100
+	},
+	"Star": {
+		"size": 500,
+		"tint": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"solarLuminosity": 0.8,
+		"lightRadius": 50000,
+		"lifespan": 9999999999999,
+		"stellarRemnantType": "neutronStar"
+	},
+	"ShipLog" : {
+		"spriteFolder": "planets/assets/xml",
+		"mapMode" : {
+			"revealedSprite": "planets/assets/mapmode/Spectral.png",
+			"scale": 16
+		}
+	}
+}

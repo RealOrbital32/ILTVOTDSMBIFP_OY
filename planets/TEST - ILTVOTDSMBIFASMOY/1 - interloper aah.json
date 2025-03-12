@@ -1,0 +1,75 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Interloper aah planet",
+	"starSystem": "Cigtu.ILVONTSMBIFASM(OY)",
+	"Base": {
+		"surfaceGravity": 9,
+		"surfaceSize": 600,
+		"hasMapMarker": true,
+		"ambientLight": 0.5
+	},
+	"Orbit": {
+		"semiMajorAxis": 30000,
+		"primaryBody": "Star",
+		"isTidallyLocked": true,
+		"isMoon": false,
+		"eccentricity" : 0.9
+	},
+	"HeightMap": {
+		"heightMap": "planets/assets/SL_h.png",
+		"textureMap": "planets/assets/SL_c.png",
+		"minHeight": 200,
+		"maxHeight": 2250
+	},
+	"Water": {
+		"size": 800,
+			"curve":[
+			{"time": 1, "value":0},
+			{"time": 1.35, "value":0},
+			{"time": 1.36, "value":1},
+			{"time": 3.59, "value":1},
+			{"time": 4, "value":0}
+				]
+				},
+	"Lava": {
+		"size": 1000,
+			"curve":[
+			{"time": 0, "value":1},
+			{"time": 1.35, "value":1},
+			{"time": 1.36, "value":0}
+				]
+			},
+	"Atmosphere": {
+		"size": 1580,
+		"fogSize": 1580,
+		"useAtmosphereShader": true,
+		"atmosphereTint": {
+			"r": 10,
+			"g": 255,
+			"b": 100,
+			"a": 255
+		},
+		"fogTint": {
+			"r": 10,
+			"g": 255,
+			"b": 100,
+			"a": 255
+		}
+	},
+	"ShipLog": {
+		"spriteFolder": "planets/logs/entries/",
+		"xmlFile": "planets/logs/electrum.xml",
+		"mapMode": {
+			"revealedSprite": "planets/logs/mapmode/electrum.png",
+			"scale": 0.4,
+			"manualPosition": {
+				"x": 400,
+				"y": -110
+			},
+			"manualNavigationPosition": {
+				"x": 3,
+				"y": 0
+			}
+		}
+	}
+}
